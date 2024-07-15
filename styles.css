@@ -1,0 +1,225 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap");
+
+:root {
+  --black: #2f3645;
+  --white: #eeedeb;
+  --biru: #1890ff;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: var(--white);
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+header {
+  background-color: var(--black);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+}
+
+header > nav {
+  display: flex;
+  justify-content: center;
+}
+
+header > nav > h1 {
+  display: inline-block;
+  text-align: center;
+  align-self: center;
+  color: var(--white);
+  transition: text-shadow 0.3s;
+}
+
+header > nav > h1:hover {
+  text-shadow: 0 0 5px var(--white);
+}
+
+header > nav > ul {
+  display: flex;
+  margin: 0 15vw;
+}
+
+header > nav > ul > li {
+  list-style: none;
+  padding: 0.5rem 3vw;
+}
+
+header > nav > ul > li > a {
+  display: inline-block;
+  font-weight: 700;
+  border-radius: 8rem;
+  border: 1px solid transparent;
+  padding: 0.3rem 2vw;
+  transition: all 0.2s;
+}
+
+header > nav > ul > li > a:hover {
+  color: var(--black);
+  text-shadow: 0 0 5px var(--black);
+  background-color: rgba(255, 255, 255, 0.8);
+  border: 1px solid var(--white);
+  box-shadow: 0 0 5px var(--white);
+}
+
+.main-1,
+.main-2,
+.main-3 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#title {
+  text-align: center;
+  font-size: 3rem;
+  margin: 1em 0;
+  margin-top: 4rem;
+}
+
+#img-div,
+.img-div {
+  max-width: 70vw;
+  min-width: 70vw;
+  background-color: #f5f7f8;
+  padding: 1rem;
+  border-radius: 15px;
+  box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.4);
+}
+
+#image,
+.image,
+.image-senjata {
+  display: block;
+  max-width: 100%;
+  border-radius: 20px;
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.4);
+  cursor: pointer;
+  transition: all 0.4s;
+}
+
+#image:hover {
+  box-shadow: 0 0 5px 3px rgba(231, 111, 81, 0.4);
+  transform: scale(1.01);
+}
+
+.image:hover {
+  box-shadow: 0 0 5px 3px rgba(55, 183, 195, 0.4);
+  transform: scale(1.01);
+}
+
+.image-senjata:hover {
+  box-shadow: 5px 0 5px rgba(55, 183, 195, 0.4), 0 5px 5px rgba(55, 183, 195, 0.4), -5px 0 5px rgba(231, 111, 81, 0.4), 0 -5px 5px rgba(231, 111, 81, 0.4);
+  transform: scale(1.01);
+}
+
+#img-caption,
+.img-caption {
+  margin-top: 0.5rem;
+  margin-left: 2rem;
+  font-size: 0.9rem;
+  line-height: 1.6rem;
+  font-style: italic;
+  letter-spacing: 0.5px;
+}
+
+.img-caption > span,
+#img-caption > span {
+  display: block;
+}
+
+#tribute-info,
+.info-2,
+.info-3 {
+  max-width: 70vw;
+  margin: 3rem auto;
+  padding-top: 4rem;
+}
+
+.waktu-permohonan {
+  margin-bottom: 2rem;
+}
+
+.waktu-permohonan > h3,
+.ket > h3 {
+  color: var(--biru);
+  margin-bottom: 0.5rem;
+}
+
+.ket > ul > li {
+  margin-left: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.ket > p {
+  line-height: 1.7rem;
+}
+
+.ket > p > span {
+  display: block;
+  margin: 0.5rem 0;
+}
+
+#video {
+  display: flex;
+  justify-content: center;
+}
+
+#video > iframe {
+  width: 695px;
+  min-height: 391px;
+  border-radius: 15px;
+  border: 10px solid #f5f7f8;
+  box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.4);
+}
+
+footer > h3 {
+  background-color: var(--black);
+  color: var(--white);
+  text-align: center;
+  padding: 1.2rem 0;
+  margin-top: 2rem;
+}
+
+footer > h3 > a {
+  color: var(--biru);
+  transition: all 0.5s;
+}
+
+footer > h3 > a:hover {
+  display: inline-block;
+  text-shadow: 0 0 5px var(--biru);
+  transform: translateX(0.3rem);
+}
+
+@media (max-width: 768px) {
+  header > nav > h1 {
+    display: none;
+  }
+
+  #title {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 576px) {
+  #video > iframe {
+    width: 576px;
+  }
+}
