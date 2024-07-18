@@ -216,7 +216,9 @@ footer > h3 > a:hover {
     font-size: 2rem;
   }
 
-  .main-1 {
+  .main-1,
+  .main-2,
+  .main-3 {
     padding: 0 1em 0;
   }
 
