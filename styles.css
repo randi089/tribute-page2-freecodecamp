@@ -97,7 +97,6 @@ header > nav > ul > li > a:hover {
 #img-div,
 .img-div {
   max-width: 70vw;
-  min-width: 70vw;
   background-color: #f5f7f8;
   padding: 1rem;
   border-radius: 15px;
@@ -107,7 +106,6 @@ header > nav > ul > li > a:hover {
 #image,
 .image,
 .image-senjata {
-  display: block;
   max-width: 100%;
   border-radius: 20px;
   box-shadow: 0 0 3px rgba(0, 0, 0, 0.4);
@@ -216,6 +214,29 @@ footer > h3 > a:hover {
 
   #title {
     font-size: 2rem;
+  }
+
+  .main-1 {
+    padding: 0 1em 0;
+  }
+
+  #img-div,
+  .img-div {
+    max-width: unset;
+    width: 100%;
+  }
+
+  #img-caption,
+  .img-caption {
+    margin-left: 0.5em;
+  }
+
+  #tribute-info,
+  .info-2,
+  .info-3 {
+    max-width: unset;
+    width: 100%;
+    padding: 4rem 1em 0;
   }
 }
 
